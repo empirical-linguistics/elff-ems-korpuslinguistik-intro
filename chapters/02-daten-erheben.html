@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+	<title>Einstieg in die Korpuslinguistik</title>
+	<meta charset="UTF-8">
+	<link rel="icon" href="../img/empiricalmethods-logo-favicon.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="../scripts/sidenav.js"></script>
+	<script src="../scripts/smoothscroll.js"></script>
+	<script src="../scripts/progressbar.js"></script>
+	<script src="../scripts/justified.js"></script>
+	<script src="../scripts/fontsize.js"></script>
+	<script src="../scripts/fade.js"></script>
+	<link rel="stylesheet" href="../styles/styles.css">
+
+	<!-- show navigation bar -->
+	<script type = "text/javascript">window.onload = openNav;</script>
+
+	
+</head>
+
+<!-- main content -->
+<div id="main">
+
+<!-- progress bar -->
+<div class="header">
+	<div class="progress-container">
+	  <div class="progress-bar" id="myBar"></div>
+	</div>
+</div>
+  
+
+<!-- main body -->
+<body class="animate-in">
+<div id="header">
+	<div id="mySidenav" class="sidenav">
+		<a href="javascript:void(0)" class="closebtn" onclick="toggleNav()">&times;</a>
+		<img src="../img/empiricalmethods-logo-favicon.png" style="padding-left:60px;padding-bottom:20px;width:50%;height:auto;"></img>
+		<a href="#About">Einführung</a>
+		<a href="#lorem">Software</a>
+		<a href="#ipsum">Arbeit mit Templates</a>
+		<a href="#further">Bild einfügen</a>
+		<p style="leftnavicons">
+		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="leftalign()" id="trigram">
+				<img id="align" src="../img/leftaligned-icon.svg"></img>
+			</a>
+		</div>
+		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="justify()" id="trigram">
+				<img id="align" src="../img/justified-icon.svg"></img>
+			</a>
+		</div>
+<!-- 		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="decrfont()" id="trigram">
+				<img id="align" src="../img/textsmaller.svg"></img>
+			</a>
+		</div>
+		<div class="sidenav-bottom">
+			<a style="cursor: pointer" onclick="incrfont()" id="trigram">
+				<img id="align" src="../img/textbigger.svg"></img>
+			</a>
+		</div> -->
+	</p>
+		<!-- <a href="#bla"><img class="bottom" src = "../img/justified-icon.png"></img></a> -->
+	  </div>
+
+	  <span style="font-size:30px;cursor:pointer; float:right" onclick="toggleNav()">&#9776;</span>
+
+	  <p>
+	  <!-- <img src="../img/empiricalmethods-logo-small.png" style="float:left;height=40%;width=40%;padding-right:20px;"></img> -->
+	  <h1>Einstieg in die Korpuslinguistik</h1>
+	</p>
+</div>
+	<div class="main" id="About">
+
+	  <h2>Daten erheben</h2>
+
+	  <h3>Suchsyntax</h3>
+
+	 <p>Für die Datenerhebung verwenden wir das <strong>DWDS-Kernkorpus des 20. Jahrhunderts</strong>, das über dwds.de zugänglich ist. Wir suchen auf der Wortebene mit Hilfe von regulären Ausdrücken nach den Formen programmiert und vorprogrammiert. Dafür benutzen wir den Suchstring</p>
+	<pre>@programmiert || @vorprogrammiert</pre>
+	<p>Das @-Zeichen bedeutet, dass wir genau diese Strings suchen und keine anderen Wortformen wie programmierte, programmiertes etc. Da uns nur die prädikative Verwendung interessiert, brauchen wir die flektierten Wortformen nicht. Der horizontale Strich | ist der ODER-Operator; dass man ihn hier doppelt setzen muss, ist eine Besonderheit der DWDS-Suchsyntax.</p>
+
+	<h3>Export</h3>
+	
+	<p>Die Suche liefert uns 88 Treffer, die nun im Browser in ihrem jeweiligen Kontext dargestellt werden. Diese Daten wollen wir nun exportieren, und zwar im “Key Word in Context” (KWIC)-Format. Damit ist gemeint, dass der Suchtreffer zusammen mit seinem unmittelbaren Kontext dargestellt wird. Erfreulicherweise bietet das DWDS eine sehr gute Exportfunktion, die es erlaubt, Daten im CSV-Format zu speichern.</p>
+
+	  <img src="../img/jon-tyson-r9T0LZv8xWQ-unsplash.jpg" style="width:60%" class="center">
+		
+	 
+	 <p>Legen wir also los! Doch das können wir nicht, ohne uns zuvor einen Plan zurechtzulegen. 
+	</p>
+	</div>
+	<div class="fade">
+	 
+	  <img src="../img/idea-1876659_1920.jpg" alt="Idee" style="width:500px">
+	</div>
+	
+	<div class="main">
+
+
+	</div>
+  
+	<div id="up" style="float:right;font-size:40px;color:red"><a href="#header">↺</a></div>
+	
+	<span style="font-size:25px;float:left;"><a href="../index.html"><</a></span>
+	<span style="font-size:25px;float:right;"><a href="../index.html">></a></span>
+
+
+
+</body>
+
+<!-- fade effect-->
+<script>
+	window.addEventListener("beforeunload", function () {
+		document.body.classList.add("animate-out");
+	  });
+	</script>  
+
+</div>
+</html> 
